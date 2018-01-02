@@ -11,11 +11,16 @@
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-	
-	<link rel="stylesheet" href="Foundation/css/app.css">
+
+	<!-- Custom CSS -->	
+	<link rel="stylesheet" href="assets/styles/b2mcss.css">
+
+	<!-- Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Favicon -->
-	<link rel="icon" href="assets/favicon/logo-01.png" type="image/png" sizes="16x16">
+	<link rel="icon" href="assets/favicon/favicon_B2M.png" type="image/png" sizes="16x16">
 
 	<!-- Typogaphy -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto' type="text/css" rel='stylesheet'>
@@ -25,19 +30,98 @@
 
 <!-- Body -->
 <body>
+<div class="container clearfix">
 
 	<!-- Header -->
 	<header>
+	<div class="row">
+	<div class="container col-6">
+		<img src="assets/imgs/B2M/Logo_B2M.png" width="100%" title="Bootstrappin' to Music" alt="Bootstrappin' to Music Logo">
+	</div>
 	<!-- Nav Bar -->
-	<nav>
-	</nav>
+	<div id="socialnetworks" class="container col-6 d-flex align-items-end justify-content-end"">
+		<a href="http://www.instagram.com/rics.designs"><span class="fa fa-instagram fa-2x"></span></a>
+		<a href="#"><span class="fa fa-twitter-square fa-2x"></span></a>
+		<a href="#"><span class="fa fa-facebook-square fa-2x"></span></a>
+	</div>
+	</div>
 	</header>
 
-
-	<!-- Content -->
-	<div id="content">
-	
+	<!-- Nav Bar -->
+	<div class="row">
+	<nav class="container d-flex justify-content-around text-uppercase">
+		<a href="index.html">Home</a>
+		<a href="BOOTSTRAPPINGtoMusic.html" class="active">Music Blog</a>
+		<a href="TheFOUNDATIONofGastronomy.html">Cooking Blog</a>
+		<a href="MATERIALofDreams.html">Turism Blog</a>
+		<a href="#">Top Songs</a>
+		<a href="#">Get Notified!</a>
+	</nav>
 	</div>
+
+
+<!-- Content -->
+<div id="content" class="d-flex container">
+	<div id="blogposts" class="col-8">
+		<article title="Your Lie" class="row d-flex align-items-start">
+		<div class="col-8" id="paragraph"><p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur.</p></div>
+		<div class="col-4" id="blogimage"><img class="img01" src="assets/imgs/YourLie.png" alt="Your Lie in April" title="Your Lie in April"></div>
+		</article>
+
+		<article title="Tokio Ghoul" class="row d-flex align-items-start">
+		<div class="col-4" id="blogimage"><img src="assets/imgs/Touka.png" alt="Tokio Ghoul" title="Beautiful Touka: Tokio Ghoul" width="200%"></div>
+		<div class="col-8" id="paragraph"><p class="text-justify">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p></div>
+		</article>
+
+	</div>
+
+
+<!-- Search Bar -->
+	<div id="searchbar" class="col-4">
+	<form class=" form-group col-12">
+		<div class="row form-group">			
+			<span class="form-group-addon col-2 d-flex justify-content-center align-items-center" id="icon" disabled><i class="fa fa-search  fa-fw"></i></span>
+			<input type="text" class="form-control col-10" id="Search" placeholder="Type your query" required="true">
+		</div>
+		<div class="text-center">
+			<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#AdvancedOptions">Advanced Options</button>
+			
+		<div id="AdvancedOptions" class="collapse">
+			<div id="searchBy" class="btn-group col-12 justify-content-center" role="group">
+				<button type="button" class="btn btn-info col-4">Songs</button>
+				<button type="button" class="btn btn-info col-4">Artists</button>
+				<button type="button" class="btn btn-info col-4">Albums</button>
+			</div>
+			<div class="col-12 text-center input-group">
+				<select class="form-control" id="year">
+					<option selected disabled>Time period</option>
+					<option>60's</option>
+					<option>70's</option>
+					<option>80's</option>
+					<option>90's</option>
+				</select> 
+			</div>
+			<div class="col-12 text-center form-group">
+				<input type="text" name="RecordLabel" placeholder="Record Label" class="form-control " width="100%">
+			</div>
+
+			<div class="col-12 text-center form-group">
+				<label for="comments" class="col-12">Aditional Tags</label>
+				<textarea class="form-control" name="comments" rows="3"></textarea>
+			</div>
+
+		</div>
+
+		<div class="col-12 d-flex justify-content-center">
+		<button type="submit" id="btnSearch" class="btn btn-outline-success"><span>Search</span></button></div>
+	</form>
+
+	</div>
+</div>
 
 
 	<!-- Footer -->
@@ -50,5 +134,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
+</div>
 </body>
 </html>
