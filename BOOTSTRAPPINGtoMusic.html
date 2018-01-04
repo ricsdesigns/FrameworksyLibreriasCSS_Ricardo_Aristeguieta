@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Favicon -->
-	<link rel="icon" href="assets/favicon/favicon_B2M.png" type="image/png" sizes="16x16">
+	<link rel="icon" href="assets/Logos_and_Favicons/Logos_favB2M.png" type="image/png" sizes="16x16">
 
 	<!-- Typogaphy -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto' type="text/css" rel='stylesheet'>
@@ -30,16 +30,16 @@
 
 <!-- Body -->
 <body>
-<div class="container clearfix">
+<div class="clearfix">
 
 	<!-- Header -->
 	<header>
-	<div class="row">
-	<div class="container col-6">
-		<img src="assets/imgs/B2M/Logo_B2M.png" width="100%" title="Bootstrappin' to Music" alt="Bootstrappin' to Music Logo">
+	<div class="row mx-auto container pt-3" id="Top">
+	<div class="col-lg-6 col-12 p-0">
+		<img src="assets/Logos_and_Favicons/Logos_LogoB2M.png" width="100%" title="Bootstrappin' to Music" alt="Bootstrappin' to Music Logo">
 	</div>
-	<!-- Nav Bar -->
-	<div id="socialnetworks" class="container col-6 d-flex align-items-end justify-content-end"">
+	<!-- SN Bar -->
+	<div id="socialnetworks" class="col-lg-6 col-12 d-flex align-items-lg-end justify-content-lg-end align-items-center justify-content-center p-lg-0 pt-2 px-0">
 		<a href="http://www.instagram.com/rics.designs"><span class="fa fa-instagram fa-2x"></span></a>
 		<a href="#"><span class="fa fa-twitter-square fa-2x"></span></a>
 		<a href="#"><span class="fa fa-facebook-square fa-2x"></span></a>
@@ -48,8 +48,8 @@
 	</header>
 
 	<!-- Nav Bar -->
-	<div class="row">
-	<nav class="container d-flex justify-content-around text-uppercase">
+	<div id="navBar" class="row p-3 mt-3">
+	<nav class="d-none d-md-flex justify-content-between text-uppercase container">
 		<a href="index.html">Home</a>
 		<a href="BOOTSTRAPPINGtoMusic.html" class="active">Music Blog</a>
 		<a href="TheFOUNDATIONofGastronomy.html">Cooking Blog</a>
@@ -57,44 +57,326 @@
 		<a href="#">Top Songs</a>
 		<a href="#">Get Notified!</a>
 	</nav>
+
+	<div class="col-12 d-md-none d-flex justify-content-center align-items-center p-3">
+		<button type="button" id="smallNavBtn" class="p-3 btn btn-info" data-toggle="collapse" data-target="#smallNav"><span class="fa fa-lg fa-fw fa-bars"></span></button>
+	</div>
+
+	<div id="smallNav" class="collapse col-12">
+	<nav class="d-md-none d-flex flex-column text-center text-uppercase container collapse">
+		<a href="index.html" class="pt-3">Home</a>
+		<a href="BOOTSTRAPPINGtoMusic.html" class="active pt-3">Music Blog</a>
+		<a href="TheFOUNDATIONofGastronomy.html" class="pt-3">Cooking Blog</a>
+		<a href="MATERIALofDreams.html" class="pt-3">Turism Blog</a>
+		<a href="#" class="pt-3">Top Songs</a>
+		<a href="#" class="pt-3">Get Notified!</a>
+
+		<div class="col-12 d-flex justify-content-center align-items-center p-3">
+		<button type="button" id="smallNavBtn" class="p-3 btn btn-danger" data-toggle="collapse" data-target="#smallNav"><span class="fa fa-lg fa-fw fa-times" data-toggle="collapse" data-target="#smallNav"></span></button>
+		</div>
+
+	</nav>
+	</div>
 	</div>
 
 
 <!-- Content -->
-<div id="content" class="d-flex container">
-	<div id="blogposts" class="col-8">
-		<article title="Your Lie" class="row d-flex align-items-start">
-		<div class="col-8" id="paragraph"><p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+<div id="content" class="d-flex flex-wrap">
+	<div id="blogposts" class="col-lg-8 col-12 order-lg-1 order-2 container">
+
+		<!-- Blog Post -->
+		<article title="Your Lie" class="row d-flex align-items-start container mx-auto">
+		<div class="col-lg-8 col-12 order-2 order-lg-1" id="post">
+			<h4>From classical to modern</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur.</p></div>
-		<div class="col-4" id="blogimage"><img class="img01" src="assets/imgs/YourLie.png" alt="Your Lie in April" title="Your Lie in April"></div>
+		consequat.</p></div>
+		<div class="col-lg-4 col-12 order-1 order-lg-2" id="blogimage"><img class="img01" src="assets/imgs/YourLie.png" alt="Your Lie in April" title="Your Lie in April"></div>
+
+		<!-- Comment Input -->
+		<form id="comments" class="col-12 row form-group order-3">
+			<span class="form-group-addon d-none d-sm-flex col-1 justify-content-center align-items-center" id="icon" disabled><i class="fa fa-user  fa-fw fa-2x"></i></span>
+			<textarea class="form-control col-9" id="CommentArea" placeholder="&#xF075 Write what you think" rows="2" required></textarea>
+			<span class="form-group-addon col-2 d-flex justify-content-center align-items-center" id="icon" disabled><button class="btn btn-info" type="submit">Post</button></span>
+		</form>
+
+
+		<!-- Comments -->
+		<div class="row order-4">
+			<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#MoreComments1">Comments <span class="fa fa-comments fa-fw"></span></button>
+			<a href="#Top"><button type="button" class="btn btn-link">Back to Top <span class="fa fa-arrow-up fa-fw"></span></button></a>
+		</div>
+
+			<!-- More Comments -->
+			<ul id="MoreComments1" class="collapse col-12 order-4">
+
+			<li class="list-group-item">
+			<div class="col-12 d-flex flex-row">
+				<span class="col-2 d-none d-sm-flex flex-row align-items-center" id="icon" disabled><i class="fa fa-user-circle  fa-2x fa-fw"></i></span>
+				<div id="comment" class="col-12 col-sm-10 panel panel-default">
+					<div class="d-flex justify-content-between">
+					<h5 class="small">Tchaikovsky23</h5><small>3 days ago</small>
+					</div>
+					<p class="">Your Lorem Ipsum is god awful ):< </p>
+
+					<div id="contextButton row">
+						<button type="button" class="btn btn-link btn-sm" data-toggle="collapse" data-target="#ReplyField">Reply <span class="fa fa-comment-o fa-fw"></span></button>
+
+						<button type="button" class="btn btn-link btn-sm">Share <span class="fa fa-share-alt fa-fw"></span></button>
+
+						<button type="button" class="btn btn-link btn-sm" data-toggle="collapse" data-target="#MoreReplies"><span class="badge badge-primary badge-pill">2</span> replies <span class="fa fa-comments-o fa-fw"></span></button>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Reply Field -->
+			<ul>
+				<div id="ReplyField" role="tabpanel" class="panel-collapse collapse"><li class="list-group-item">
+					<form id="Reply" class="col-12 d-flex flex-row form-group">
+						<span class="form-group-addon col-1 d-flex justify-content-center align-items-center" id="icon" disabled><i class="fa fa-user-o  fa-fw fa-lg"></i></span>
+						<textarea class="form-control col-8" id="ReplyArea" placeholder="&#xF075 Troll somebody" rows="1" required></textarea>
+						<span class="form-group-addon d-flex justify-content-center align-items-center p-1" id="icon" disabled><button class="btn btn-success btn-sm" type="submit">Reply <span class="fa fa-comment fa-fw"></span></button></span>
+					</form>
+				</li></div>
+			</ul>
+
+			<!-- Replies -->
+			<li class="list-group-item">
+			<ul>
+				<div id="MoreReplies" role="tabpanel" class="panel-collapse collapse">
+
+				<li class="list-group-item">
+				<div class="col-12 d-flex flex-row">
+					<span class="col-2 d-none d-sm-flex flex-row align-items-center" id="icon" disabled><i class="fa fa-user-circle  fa-2x fa-fw"></i></span>
+					<div id="comment" class="col-12 col-sm-10 panel panel-default">
+						<div class="d-flex justify-content-between">
+						<h5 class="small">n00bKill3r</h5><small>2 days ago</small>
+						</div>
+						<p class="">lol kil ur slef!!1! </p>
+
+						<div id="contextButton row">
+							<button type="button" class="btn btn-link btn-sm" data-toggle="collapse" data-target="#ReplyField2">Reply <span class="fa fa-comment-o fa-fw"></span></button>
+
+							<button type="button" class="btn btn-link btn-sm">Share <span class="fa fa-share-alt fa-fw"></span></button>
+
+							<button type="button" class="btn btn-disabled btn-sm" disabled>O Replies <span class="fa fa-comments-o fa-fw"></span></button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Reply Field -->
+				<ul>
+				<div id="ReplyField2" role="tabpanel" class="panel-collapse collapse"><li class="list-group-item">
+					<form id="Reply" class="col-12 d-flex flex-row form-group">
+						<span class="form-group-addon col-1 d-flex justify-content-center align-items-center" id="icon" disabled><i class="fa fa-user-o  fa-fw fa-lg"></i></span>
+						<textarea class="form-control col-8" id="ReplyArea" placeholder="&#xF075 Troll somebody" rows="1" required></textarea>
+						<span class="form-group-addon d-flex justify-content-center align-items-center p-1" id="icon" disabled><button class="btn btn-success btn-sm" type="submit">Reply <span class="fa fa-comment fa-fw"></span></button></span>
+					</form>
+				</li></div>
+				</ul>						
+				</li><!-- Comment End-->
+
+				<li class="list-group-item">
+				<div class="col-12 d-flex flex-row">
+					<span class="col-2 d-none d-sm-flex flex-row align-items-center" id="icon" disabled><i class="fa fa-user-circle  fa-2x fa-fw"></i></span>
+					<div id="comment" class="col-12 col-sm-10 panel panel-default">
+						<div class="d-flex justify-content-between">
+						<h5 class="small">n00bKill3r</h5><small>2 days ago</small>
+						</div>
+						<p class="">lol kil ur slef!!1! </p>
+
+						<div id="contextButton row">
+							<button type="button" class="btn btn-link btn-sm" data-toggle="collapse" data-target="#ReplyField3">Reply <span class="fa fa-comment-o fa-fw"></span></button>
+
+							<button type="button" class="btn btn-link btn-sm">Share <span class="fa fa-share-alt fa-fw"></span></button>
+
+							<button type="button" class="btn btn-link btn-sm" data-toggle="collapse" data-target="#MoreReplies2"><span class="badge badge-primary badge-pill">1</span> reply <span class="fa fa-comments-o fa-fw"></span></button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Reply Field -->
+				<ul>
+				<div id="ReplyField3" role="tabpanel" class="panel-collapse collapse"><li class="list-group-item">
+					<form id="Reply" class="col-12 d-flex flex-row form-group">
+						<span class="form-group-addon col-1 d-flex justify-content-center align-items-center" id="icon" disabled><i class="fa fa-user-o  fa-fw fa-lg"></i></span>
+						<textarea class="form-control col-8" id="ReplyArea" placeholder="&#xF075 Troll somebody" rows="1" required></textarea>
+						<span class="form-group-addon d-flex justify-content-center align-items-center p-1" id="icon" disabled><button class="btn btn-success btn-sm" type="submit">Reply <span class="fa fa-comment fa-fw"></span></button></span>
+					</form>
+				</li></div>
+				</ul>						
+				</li><!-- Comment End-->
+
+				<li class="list-group-item">
+				<ul>
+				<div id="MoreReplies2" role="tabpanel" class="panel-collapse collapse">
+				<!-- SubReply --><li class="list-group-item">
+				<div class="col-12 d-flex flex-row">
+					<span class="col-2 d-none d-sm-flex flex-row align-items-center" id="icon" disabled><i class="fa fa-user-circle  fa-2x fa-fw"></i></span>
+					<div id="comment" class="col-12 col-sm-10 panel panel-default">
+						<div class="d-flex justify-content-between">
+						<h5 class="small">ClassicalHero62</h5><small>2 days ago</small>
+						</div>
+						<p class="">Double post! Noob :'D</p>
+
+						<div id="contextButton row">
+							<button type="button" class="btn btn-link btn-sm" data-toggle="collapse" data-target="#ReplyField4">Reply <span class="fa fa-comment-o fa-fw"></span></button>
+
+							<button type="button" class="btn btn-link btn-sm">Share <span class="fa fa-share-alt fa-fw"></span></button>
+
+							<button type="button" class="btn btn-disabled btn-sm" disabled>O replies <span class="fa fa-comments-o fa-fw"></span></button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Reply Field -->
+				<ul>
+				<div id="ReplyField4" role="tabpanel" class="panel-collapse collapse"><li class="list-group-item">
+					<form id="Reply" class="col-12 d-flex flex-row form-group">
+						<span class="form-group-addon col-1 d-flex justify-content-center align-items-center" id="icon" disabled><i class="fa fa-user-o  fa-fw fa-lg"></i></span>
+						<textarea class="form-control col-8" id="ReplyArea" placeholder="&#xF075 Troll somebody" rows="1" required></textarea>
+						<span class="form-group-addon d-flex justify-content-center align-items-center p-1" id="icon" disabled><button class="btn btn-success btn-sm" type="submit">Reply <span class="fa fa-comment fa-fw"></span></button></span>
+					</form>
+				</li></div>
+				</ul>						
+				</li><!-- Comment End-->
+
+
+				</div>
+			</ul>
+			</li>
+
+			</li>
+			</ul>
 		</article>
 
-		<article title="Tokio Ghoul" class="row d-flex align-items-start">
-		<div class="col-4" id="blogimage"><img src="assets/imgs/Touka.png" alt="Tokio Ghoul" title="Beautiful Touka: Tokio Ghoul" width="200%"></div>
-		<div class="col-8" id="paragraph"><p class="text-justify">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p></div>
+		<!-- Blog Post -->
+		<article title="Tokio Ghoul" class="row d-flex align-items-start container mx-auto order-1 order-lg-2">
+		<div class="col-lg-4" id="blogimage"><img src="assets/imgs/Touka.png" alt="Tokio Ghoul" title="Beautiful Touka: Tokio Ghoul" class="img02"></div>
+		<div class="col-lg-8 col-12 order-2 order-lg-1" id="post">
+			<h4>Everybody hurts</h4>
+			<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló.</p></div>
+
+		<!-- Comment Input -->
+		<form id="comments" class="col-12 row form-group order-3">
+			<span class="form-group-addon d-none d-sm-flex col-1 justify-content-center align-items-center" id="icon" disabled><i class="fa fa-user  fa-fw fa-2x"></i></span>
+			<textarea class="form-control col-9" id="CommentArea" placeholder="&#xF075 Write what you think" rows="2" required></textarea>
+			<span class="form-group-addon col-2 d-flex justify-content-center align-items-center" id="icon" disabled><button class="btn btn-info" type="submit">Post</button></span>
+		</form>
+
+
+		<!-- Comments -->
+		<div class="row order-4">
+			<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#MoreComments2">Comments <span class="fa fa-comments fa-fw"></span></button>
+			<a href="#Top"><button type="button" class="btn btn-link">Back to Top <span class="fa fa-arrow-up fa-fw"></span></button></a>
+		</div>
+
+			<!-- More Comments -->
+			<ul id="MoreComments2" class="collapse col-12 order-4">
+
+			<li class="list-group-item">
+			<div class="col-12 d-flex flex-row">
+				<span class="col-2 d-none d-sm-flex flex-row align-items-center" id="icon" disabled><i class="fa fa-user-circle  fa-2x fa-fw"></i></span>
+				<div id="comment" class="col-12 col-sm-10 panel panel-default">
+					<div class="d-flex justify-content-between">
+					<h5 class="small">NumbEncore</h5><small>10 days ago</small>
+					</div>
+					<p class="">Long live chester... AMV NOW! </p>
+
+					<div id="contextButton row">
+						<button type="button" class="btn btn-link btn-sm" data-toggle="collapse" data-target="#ReplyField">Reply <span class="fa fa-comment-o fa-fw"></span></button>
+
+						<button type="button" class="btn btn-link btn-sm">Share <span class="fa fa-share-alt fa-fw"></span></button>
+
+						<button type="button" class="btn btn-disabled btn-sm" disabled>O replies <span class="fa fa-comments-o fa-fw"></span></button>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Reply Field -->
+			<ul>
+				<div id="ReplyField" role="tabpanel" class="panel-collapse collapse"><li class="list-group-item">
+					<form id="Reply" class="col-12 d-flex flex-row form-group">
+						<span class="form-group-addon col-1 d-flex justify-content-center align-items-center" id="icon" disabled><i class="fa fa-user-o  fa-fw fa-lg"></i></span>
+						<textarea class="form-control col-8" id="ReplyArea" placeholder="&#xF075 Troll somebody" rows="1" required></textarea>
+						<span class="form-group-addon d-flex justify-content-center align-items-center p-1" id="icon" disabled><button class="btn btn-success btn-sm" type="submit">Reply <span class="fa fa-comment fa-fw"></span></button></span>
+					</form>
+				</li></div>
+			</ul>
+
+			</li>
+			<li class="list-group-item">
+			<div class="col-12 d-flex flex-row">
+				<span class="col-2 d-none d-sm-flex flex-row align-items-center" id="icon" disabled><i class="fa fa-user-circle  fa-2x fa-fw"></i></span>
+				<div id="comment" class="col-12 col-sm-10 panel panel-default">
+					<div class="d-flex justify-content-between">
+					<h5 class="small">Otkx1992</h5><small>12 days ago</small>
+					</div>
+					<p class="">Loveu toukachan!!1 + 80s reff!! :D </p>
+
+					<div id="contextButton row">
+						<button type="button" class="btn btn-link btn-sm" data-toggle="collapse" data-target="#ReplyField">Reply <span class="fa fa-comment-o fa-fw"></span></button>
+
+						<button type="button" class="btn btn-link btn-sm">Share <span class="fa fa-share-alt fa-fw"></span></button>
+
+						<button type="button" class="btn btn-disabled btn-sm" disabled>O replies <span class="fa fa-comments-o fa-fw"></span></button>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Reply Field -->
+			<ul>
+				<div id="ReplyField" role="tabpanel" class="panel-collapse collapse"><li class="list-group-item">
+					<form id="Reply" class="col-12 d-flex flex-row form-group">
+						<span class="form-group-addon col-1 d-flex justify-content-center align-items-center" id="icon" disabled><i class="fa fa-user-o  fa-fw fa-lg"></i></span>
+						<textarea class="form-control col-8" id="ReplyArea" placeholder="&#xF075 Troll somebody" rows="1" required></textarea>
+						<span class="form-group-addon d-flex justify-content-center align-items-center p-1" id="icon" disabled><button class="btn btn-success btn-sm" type="submit">Reply <span class="fa fa-comment fa-fw"></span></button></span>
+					</form>
+				</li></div>
+			</ul>
+
+			</li>
+    		</ul>
 		</article>
 
 	</div>
 
 
 <!-- Search Bar -->
-	<div id="searchbar" class="col-4">
-	<form class=" form-group col-12">
-		<div class="row form-group">			
-			<span class="form-group-addon col-2 d-flex justify-content-center align-items-center" id="icon" disabled><i class="fa fa-search  fa-fw"></i></span>
-			<input type="text" class="form-control col-10" id="Search" placeholder="Type your query" required="true">
+<aside id="searchbar" class="col-lg-4 col-12 order-lg-2 order-xl-2 order-1">
+
+	<form class="form-group container" id="SearchForm">
+		<div class="pt-3 col-12">
+			<div class="row form-group d-flex justify-content-center">
+			<span class="form-group-addon col-lg-2 justify-content-center align-items-center d-none d-lg-flex d-xl-flex" id="icon" disabled><i class="fa fa-search  fa-fw"></i></span>
+
+			<div class="col-lg-8 col-10 justify-content-center align-items-center d-flex">
+				<input type="text" class="form-control" id="Search" placeholder="Type your query" required></div>
+			</div>
+
+			<div class="pt-3 col-12">
+			<div class="d-lg-flex d-xl-flex d-none justify-content-center">
+			<button type="submit" id="btnSearch" class="btn btn-outline-success"><span>Search</span></button></div>
+
+			<div class="d-flex d-lg-none d-xl-none justify-content-center">
+			<button type="submit" id="btnSearch" class="btn btn-block btn-success w-50"><span>Search</span></button></div>
+			</div>
 		</div>
+
+
 		<div class="text-center">
-			<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#AdvancedOptions">Advanced Options</button>
+			<button type="button" class="btn btn-link pt-2" data-toggle="collapse" data-target="#AdvancedOptions">Advanced Options</button>
 			
 		<div id="AdvancedOptions" class="collapse">
+
 			<div id="searchBy" class="btn-group col-12 justify-content-center" role="group">
-				<button type="button" class="btn btn-info col-4">Songs</button>
-				<button type="button" class="btn btn-info col-4">Artists</button>
-				<button type="button" class="btn btn-info col-4">Albums</button>
+				<button type="button" class="btn btn-info col-lg-4">Songs</button>
+				<button type="button" class="btn btn-info col-lg-4">Artists</button>
+				<button type="button" class="btn btn-info col-lg-4">Albums</button>
 			</div>
 			<div class="col-12 text-center input-group">
 				<select class="form-control" id="year">
@@ -113,20 +395,27 @@
 				<label for="comments" class="col-12">Aditional Tags</label>
 				<textarea class="form-control" name="comments" rows="3"></textarea>
 			</div>
+		
+		<button type="button" class="btn btn-link pb-2" data-toggle="collapse" data-target="#AdvancedOptions">Hide Advanced Options</button>
+
+		<div class="d-lg-flex d-xl-flex d-none justify-content-center">
+		<button type="submit" id="btnSearch" class="btn btn-outline-success"><span>Search</span></button></div>
+
+		<div class="d-flex d-xl-none d-lg-none justify-content-center">
+		<button type="submit" id="btnSearch" class="btn btn-block btn-success"><span>Search</span></button></div>
 
 		</div>
-
-		<div class="col-12 d-flex justify-content-center">
-		<button type="submit" id="btnSearch" class="btn btn-outline-success"><span>Search</span></button></div>
 	</form>
 
-	</div>
+	</aside>
 </div>
 
+</div> <!-- Clearfix Ends-->
 
 	<!-- Footer -->
 	<footer>
-		
+		<p>Ricardo Aristeguieta - &#169 2018</p>
+		<a href="#Top">Back to Top <span class="fa fa-arrow-up fa-fw"></span></a>
 	</footer>
 
 	<!-- Bootstrap -->
@@ -134,6 +423,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
-</div>
+
 </body>
 </html>
