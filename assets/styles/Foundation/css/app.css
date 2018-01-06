@@ -4,77 +4,53 @@ body
 	margin: 0%;
 	font-family: 'Roboto';
 	background: url("../../../imgs/FoG/bk_food.jpg") no-repeat right center fixed;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
-	background-size: contain;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-.content{
-	max-width: 1200px;
+.fullWidth{
+	min-width: 100%;
 }
 
-.px{
-	padding: 0% 2%;
-}
+.px{padding: 0% 2%;}
+.py{padding: 2% 0%;}
+.pyy{padding: 5% 0%;}
+.pBot{padding-bottom: 5%;}
+.pBotNull{padding-bottom: 0%;}
 
-.py{
-	padding: 2% 0%;
-}
-
-.pyy{
-	padding: 5% 0%;
-}
-
-.pBot{
-	padding-bottom: 5%;
-}
-
-.active{
-	color: #5e1b22;
-}
 
 /* Link Colour*/
-a{
-	color: #c12530;
-}
+.active{color: #5e1b22;}
+a{color: #c12530;}
+a:hover{color: #fe3a4b;}
+a:focus{color: #c12530;}
 
-a:hover{
-	color: #fe3a4b;
-}
+#favsCont, #secondCol{padding: 5%;}
 
-a:focus{
-	color: #c12530;
-}
+#favs div img{transition: all 1s;}
+#favs div img:hover{filter: opacity(0.5);}
 
-label, .centered-text{
-	text-align: center;
-}
+label, .centered-text{text-align: center;}
 
 
 /* Blog */
 
-.container {
-	background-color:rgba(255,255,255,0.7);
+.container {background-color:rgba(255,255,255,0.7);}
 
-}
+h3 {color: #4c937f; font-weight: 900;}
+.fa-user-circle, .secondaryColor{color: #4c937f;}
 
 #blogPost{
 	padding: 2%;
-	border-bottom: 2px solid #333333;
+	border-bottom: 2px solid #4c937f;
 }
 
-#blogPost:last-child{
-	border-bottom: none;
-}
+#blogPost:last-child{border-bottom: none;}
 
-#date h4 small{
-	color: #666666;
-}
-
-#date h4{
-	line-height: 0.5em;
-}
+#date h4 small{color: #666666;}
+#date h4{line-height: 0.5em;}
 
 .small h4{
 	font-weight: 900;
@@ -97,19 +73,20 @@ label, .centered-text{
 textarea {
 	font-family: Roboto, FontAwesome;
 	margin-bottom: 0%;
+	max-width: 80%;
+	box-sizing: border-box;
 }
 
-#send {
-	margin-bottom: 0%;
-}
-
+#send {margin-bottom: 0%;}
+.noleft {padding-right: 0%;}
 .quote {
-	border-left: 4px solid #4c4c4c;
+	border-left: 4px solid #4c937f;
+	padding-left: 3%; 
 }
 
 /* FU FOUNDATION - Style Resets */
+.accordion-title{padding: 0%;}
 .accordion-title, .accordion-item, .accordion-content, .accordion{
-	padding: 0%;
 	border: none;
 	background-color: transparent;
 }
@@ -159,8 +136,15 @@ textarea {
 @media (min-width: 1024px){
 
 #Logo, #firstCol{
-	padding: 0;
 	background-color: #eaeaea;
+}
+
+.section {
+	box-sizing: content-box;
+	height: 2px;
+	width: 90%;
+	margin: 5% auto;
+	border-bottom: 2px solid #4c937f;
 }
 
 p{
@@ -175,12 +159,6 @@ p{
 header img{
 	max-width: 50%;
 }
-
-}
-
-/*for Small screens*/ 
-@media (max-width: 639px){
-
 
 }
 
@@ -212,4 +190,9 @@ p{
 	text-align: left;
 }
 
+}
+
+/*for small screens*/ 
+@media (max-width: 420px){
+body{overflow-x: hidden;}
 }
