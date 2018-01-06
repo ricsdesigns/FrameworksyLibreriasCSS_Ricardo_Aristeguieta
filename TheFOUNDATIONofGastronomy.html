@@ -10,14 +10,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<!-- Foundation -->
-	<link rel="stylesheet" href="Foundation/css/foundation.css">
-	<link rel="stylesheet" href="Foundation/css/app.css">
+	<link rel="stylesheet" href="assets/styles/Foundation/css/foundation.css">
+	<link rel="stylesheet" href="assets/styles/Foundation/css/app.css">
 
 	<!--Icons-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
 
 	<!-- Favicon -->
-	<link rel="icon" href="assets/Logos_and_Favicons/logo-01.png" type="image/png" sizes="16x16">
+	<link rel="icon" href="assets/Logos_and_Favicons/Logos_favFoG.png" type="image/png" sizes="16x16">
 
 	<!-- Typogaphy -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto' type="text/css" rel='stylesheet'>
@@ -27,32 +29,435 @@
 
 <!-- Body -->
 <body>
-
-
-	<!-- Header -->
-	<header>
-	<!-- Nav Bar -->
-	<nav>
-	</nav>
-	</header>
-
-
-	<!-- Content -->
-	<div id="content">
-	
+<!-- Header -->
+<header>
+	<div class="row">
+		<div id="Logo" class="columns large-4 small-12">
+			<div class="row align-center">
+				<img class="columns align-self-middle" src="assets/Logos_and_Favicons/Logos_LogoFoG.png">
+			</div>
+		</div>
+		<div class="columns large-8 show-for-large">
+		</div>
 	</div>
+</header>
+
+<!-- Content -->
+<div id="fullpage" class="row align-justify">
+
+<div id="firstCol" class="large-4 small-12 columns fullWidth"><!--First Col Begins-->
+
+	<form class="row align-center show-for-large">
+		<label class="colums small-12" for="Search"><i class="fa fa-search fa-fw"></i> Search</label>
+		<input type="text" class="columns small-8" id="Search" placeholder="Type your query" required>
+		<button type="submit" id="searchButton" class="button alert columns small-8">Search</button>
+	</form>
 
 
-	<!-- Footer -->
-	<footer>
-		
-	</footer>
+
+<!-- Nav Bar -->
+<div id="NavBar" class="row align-center show-for-large">
+<div class="pyy columns small-6">
+	<nav>
+	<ul class="vertical menu align-center">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="BOOTSTRAPPINGtoMusic.html">Music Blog</a></li>
+		<li><a href="TheFOUNDATIONofGastronomy.html" class="active">Cooking Blog</a></li>
+		<li><a href="MATERIALofDreams.html">Turism Blog</a></li>
+		<li><a href="#">Top Recipies</a></li>
+		<li><a href="#">Get Notified!</a></li>
+	</ul>
+	</nav>
+</div>
+</div>
+
+<!-- For med and small devices -->
+<div id="medNavBar" class="row align-center hide-for-large">
+<div class="columns">
+	<nav>
+	<ul class="vertical menu accordion-menu" data-accordion-menu>
+		<li><a href="#"><i class="fa fa-bars fa-fw fa-2x"></i></a>
+			<ul class="vertical menu nested" data-closable>
+				<li><a href="BOOTSTRAPPINGtoMusic.html">Music Blog</a></li>
+				<li><a href="TheFOUNDATIONofGastronomy.html" class="active">Cooking Blog</a></li>
+				<li><a href="MATERIALofDreams.html">Turism Blog</a></li>
+			</ul></li>
+	</ul>
+	</nav>
+</div>
+</div>
+
+<!-- Favorites -->
+<div class="row show-for-large pyy">
+	<div class="columns small-12 centered-text">Favorites<span class="fa fa-fw fa-star"></span></div>
+	<div class="row collapse">
+		<img class="columns align-self-middle" src="assets/imgs/FoG/food1.jpg">
+		<img class="columns align-self-middle" src="assets/imgs/FoG/food2.jpg">
+		<img class="columns align-self-middle" src="assets/imgs/FoG/food3.jpg">
+	</div>
+	<div class="row collapse">
+		<img class="columns align-self-middle" src="assets/imgs/FoG/food4.jpg">
+		<img class="columns align-self-middle" src="assets/imgs/FoG/food5.jpg">
+		<img class="columns align-self-middle" src="assets/imgs/FoG/food6.jpg">
+	</div>
+</div>
+
+<div class="columns small-12 centered-text show-for-large">Recently Visited Places<span class="fa fa-fw fa-clock-o"></span></div>
+<div id="History" class="columns show-for-large">
+<a href="">Chaliapin Steak Don</a>
+<a href="">Mini Soufflé Omelette</a>
+<a href="">Roast Pork, Just Kidding</a>
+<a href="">Transforming Furikake Gohan</a>
+<a href="">Sumire Karaage Roll </a>
+<a href="">Apple Risotto</a>
+<a href="">Cheese-Feathered Hanetsuki Gyōza</a>
+<a href="">Jōichirō Special Rich Ramen</a>
+<a href="">Rainbow Terrine</a>
+<a href="">Salmon Coulibiac</a>
+<a href="">Chou Farci</a>
+<a href="">Venison Roast Showing Two Expressions</a>
+<a href="">Eggs Benedict</a>
+<a href="">Charcoal Grilled Venison Round Steak ~Chestnut Sauce~</a>
+<a href="">Time Fuse Mapo Curry Noodles</a>
+<a href="">Yukihira Style Fragrant Butter Pilaf Inarizushi</a>
+</div>
+
 	
-	<!-- Foundation -->	
-	<script src="Foundation/js/vendor/jquery.js"></script>
-	<script src="Foundation/js/vendor/what-input.js"></script>
-	<script src="Foundation/js/vendor/foundation.js"></script>
-	<script src="Foundation/js/app.js"></script>
+</div><!--First Col END-->
+
+<div id="content" class="columns content container"><!--Second Col Begins-->
+
+	<div id="blogPost" class="row large-12 stack"><!--Blog Post -->
+		<div class="columns large-8">
+			<h3>Food to melt your heart</h3>
+		</div>
+
+		<div id="date" class="columns large-12 small-4">
+			<h4><small>3 days ago</small></h4>
+		</div>
+
+		<div class="columns small-12">
+			<img class="py" src="assets/imgs/FoG/full_food2.jpg">
+		</div>
+
+		<div class="columns small-12">
+			<p class="pBot">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<div id="postComment" class="row fullWidth">
+			<div id="userIcon" class="columns small-2 align-self-middle">
+				<i class="fa fa-user-circle  fa-3x fa-fw"></i>
+			</div>
+			<div class="columns">
+				<form class="row align-middle">
+					<textarea class="columns small-9" id="CommentArea" placeholder="&#xF075 Write what you think" rows="2" required></textarea>
+					<div class="columns small-3">
+						<button id="send" class="button alert expanded align-self-middle" type="submit">Post <span class="fa fa-paper-plane fa-fw"></span></button>
+					</div>
+
+				</form>
+			</div>
+
+		</div><!-- Post Comment Ends-->
+
+		<div class="row fullWidth">
+			<div class="columns">
+			<ul class="accordion" data-accordion data-allow-all-closed="true" data-multi-expand="true">
+			<li class="accordion-item" data-accordion-item>
+				<a class="accordion-title"><button type="button" class="button align-center">Comments <span class="fa fa-comments fa-fw"></span></button></a>
+
+					<div id="comment" class="accordion-content" data-tab-content>
+						<div class="columns small-12">
+							<div class="row small">
+								<div class="columns color">
+								<h4>RobStk</h4>
+								</div>
+		
+								<div id="dateComment" class="columns">
+								<h4>3 days ago</h4>
+								</div>
+							</div>
+		
+							<div class="row">
+								<div id="userIcon" class="columns align-self-middle">
+									<i class="fa fa-user-circle  fa-2x fa-fw"></i>
+								</div>
+		
+								<div class="columns small-10">
+									<p class="margin-bottom-0">Better than what I ate on The Wall <i class="em em-heart"></i></p>
+								</div>
+							</div>
+		
+							<!--div id="contextButton" class="row fullWidth">
+								<button type="button" class="button columns">Reply <i class="fa fa-comment-o fa-fw"></i></button>
+		
+								<button type="button" class="button columns">Share <i class="fa fa-share-alt fa-fw"></i></button>
+		
+								<button type="button" class="button columns" disabled>0 replies <i class="fa fa-comments-o fa-fw"></i></button>
+							
+							</div-->
+		
+						</div>
+					</div><!-- Comment Ends-->
+
+					<div id="comment" class="accordion-content" data-tab-content>
+						<div id="row">
+							<div class="columns small-12">
+								<div class="row small">
+									<div class="columns color">
+									<h4>Tchan16</h4>
+									</div>
+			
+									<div id="dateComment" class="columns">
+									<h4>6 days ago</h4>
+									</div>
+								</div>
+			
+								<div class="row">
+									<div id="userIcon" class="columns align-self-middle">
+										<i class="fa fa-user-circle  fa-2x fa-fw"></i>
+									</div>
+			
+									<div class="columns small-10">
+										<p class="margin-bottom-0">Looks delicious</p>
+									</div>
+								</div>
+			
+								<!--div id="contextButton" class="row fullWidth">
+									<button type="button" class="button columns">Reply <i class="fa fa-comment-o fa-fw"></i></button>
+			
+									<button type="button" class="button columns">Share <i class="fa fa-share-alt fa-fw"></i></button>
+			
+									<button type="button" class="button columns"><span class="badge alert">1</span> reply <i class="fa fa-comments-o fa-fw"			></i></button>
+								
+								</div-->
+			
+							</div>
+						</div>
+			
+						<ul class="no-bullet columns small-12">
+							
+							<li id="comment">
+								<div id="row" class="quote">
+									<div class="columns small-12">
+										<div class="row small">
+											<div class="columns color">
+												<h4>Yhdinner</h4>
+											</div>
+			
+											<div id="dateComment" class="columns">
+												<h4>5 days ago</h4>
+											</div>
+										</div>
+			
+										<div class="row">
+											<div id="userIcon" class="columns align-self-middle">
+												<i class="fa fa-user-circle  fa-2x fa-fw"></i>
+											</div>
+			
+											<div class="columns small-10">
+												<p class="margin-bottom-0">I challenge you to a Shokugeki! <i class="em em-grimacing"></i></p>
+											</div>
+										</div>
+			
+										<!--div id="contextButton" class="row fullWidth">
+											<button type="button" class="button columns">Reply <i class="fa fa-comment-o fa-fw"></i></button>
+			
+											<button type="button" class="button columns">Share <i class="fa fa-share-alt fa-fw"></i></button>
+			
+											<button type="button" class="button columns" disabled>0 replies <i class="fa fa-comments-o fa-fw"></i></button>
+								
+										</div-->
+			
+									</div>
+								</div>
+							</li><!-- Comment Ends-->
+			
+						</ul>
+			
+					</div><!-- Comment Ends-->
+
+
+				</ul>
+				</div>
+			</div><!-- Comment Section Ends--><!-- Comment Section Ends-->
+
+	</div><!-- Post Ends -->
+
+<div id="blogPost" class="row large-12 stack"><!--Blog Post -->
+		<div class="columns large-8">
+			<h3>Nobody eats like we do!</h3>
+		</div>
+
+		<div id="date" class="columns large-12 small-4">
+			<h4><small>3 days ago</small></h4>
+		</div>
+
+		<div class="columns small-12">
+			<img class="py" src="assets/imgs/FoG/full_food3.jpg">
+		</div>
+
+		<div class="columns small-12">
+			<p class="pBot">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<div id="postComment" class="row fullWidth">
+			<div id="userIcon" class="columns small-2 align-self-middle">
+				<i class="fa fa-user-circle  fa-3x fa-fw"></i>
+			</div>
+			<div class="columns">
+				<form class="row align-middle">
+					<textarea class="columns small-9" id="CommentArea" placeholder="&#xF075 Write what you think" rows="2" required></textarea>
+					<div class="columns small-3">
+						<button id="send" class="button alert expanded align-self-middle" type="submit">Post <span class="fa fa-paper-plane fa-fw"></span></button>
+					</div>
+
+				</form>
+			</div>
+
+		</div><!-- Post Comment Ends-->
+
+		<div class="row fullWidth">
+			<div class="columns">
+			<ul class="accordion" data-accordion data-allow-all-closed="true" data-multi-expand="true">
+			<li class="accordion-item" data-accordion-item>
+				<a class="accordion-title"><button type="button" class="button align-center">Comments <span class="fa fa-comments fa-fw"></span></button></a>
+
+					<div id="comment" class="accordion-content" data-tab-content>
+						<div class="columns small-12">
+							<div class="row small">
+								<div class="columns color">
+								<h4>Txdokoro92</h4>
+								</div>
+		
+								<div id="dateComment" class="columns">
+								<h4>3 days ago</h4>
+								</div>
+							</div>
+		
+							<div class="row">
+								<div id="userIcon" class="columns align-self-middle">
+									<i class="fa fa-user-circle  fa-2x fa-fw"></i>
+								</div>
+		
+								<div class="columns small-10">
+									<p class="margin-bottom-0">Oishi! <i class="em em-heart"></i> <i class="em em-heart"></i> </p>
+								</div>
+							</div>
+		
+							<!--div id="contextButton" class="row fullWidth">
+								<button type="button" class="button columns">Reply <i class="fa fa-comment-o fa-fw"></i></button>
+		
+								<button type="button" class="button columns">Share <i class="fa fa-share-alt fa-fw"></i></button>
+		
+								<button type="button" class="button columns" disabled>0 replies <i class="fa fa-comments-o fa-fw"></i></button>
+							
+							</div-->
+		
+						</div>
+					</div><!-- Comment Ends-->
+
+					<div id="comment" class="accordion-content" data-tab-content>
+						<div class="columns small-12">
+							<div class="row small">
+								<div class="columns color">
+								<h4>GraduallyR</h4>
+								</div>
+		
+								<div id="dateComment" class="columns">
+								<h4>4 days ago</h4>
+								</div>
+							</div>
+		
+							<div class="row">
+								<div id="userIcon" class="columns align-self-middle">
+									<i class="fa fa-user-circle  fa-2x fa-fw"></i>
+								</div>
+		
+								<div class="columns small-10">
+									<p class="margin-bottom-0">RECEPIES! REACEPSI! PFSOPF!</i></p>
+								</div>
+							</div>
+		
+							<!--div id="contextButton" class="row fullWidth">
+								<button type="button" class="button columns">Reply <i class="fa fa-comment-o fa-fw"></i></button>
+		
+								<button type="button" class="button columns">Share <i class="fa fa-share-alt fa-fw"></i></button>
+		
+								<button type="button" class="button columns" disabled>0 replies <i class="fa fa-comments-o fa-fw"></i></button>
+							
+							</div-->
+		
+						</div>
+					</div><!-- Comment Ends-->
+
+										<div id="comment" class="accordion-content" data-tab-content>
+						<div class="columns small-12">
+							<div class="row small">
+								<div class="columns color">
+								<h4>HallaValla</h4>
+								</div>
+		
+								<div id="dateComment" class="columns">
+								<h4>7 days ago</h4>
+								</div>
+							</div>
+		
+							<div class="row">
+								<div id="userIcon" class="columns align-self-middle">
+									<i class="fa fa-user-circle  fa-2x fa-fw"></i>
+								</div>
+		
+								<div class="columns small-10">
+									<p class="margin-bottom-0">For Odin's Beard!! <i class="em em-heart_eyes"></i></p>
+								</div>
+							</div>
+		
+							<!--div id="contextButton" class="row fullWidth">
+								<button type="button" class="button columns">Reply <i class="fa fa-comment-o fa-fw"></i></button>
+		
+								<button type="button" class="button columns">Share <i class="fa fa-share-alt fa-fw"></i></button>
+		
+								<button type="button" class="button columns" disabled>0 replies <i class="fa fa-comments-o fa-fw"></i></button>
+							
+							</div-->
+		
+						</div>
+					</div><!-- Comment Ends-->
+
+
+				</ul>
+				</div>
+			</div><!-- Comment Section Ends--><!-- Comment Section Ends-->
+
+	</div><!-- Post Ends -->
+
+
+
+</div><!--Second Col Ends-->
+
+</div><!--Full Page ends-->
+
+<!-- Footer -->
+<footer>
+		
+</footer>
+
+	<!-- Foundation -->
+	<script src="assets/styles/Foundation/js/vendor/jquery.js"></script>
+	<script src="assets/styles/Foundation/js/vendor/what-input.js"></script>
+	<script src="assets/styles/Foundation/js/vendor/foundation.js"></script>
+	<script src="assets/styles/Foundation/js/app.js"></script>
 
 </body>
 </html>

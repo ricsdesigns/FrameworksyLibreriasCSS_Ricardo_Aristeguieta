@@ -1,0 +1,215 @@
+body
+{
+	color: #333333;
+	margin: 0%;
+	font-family: 'Roboto';
+	background: url("../../../imgs/FoG/bk_food.jpg") no-repeat right center fixed;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+
+.content{
+	max-width: 1200px;
+}
+
+.px{
+	padding: 0% 2%;
+}
+
+.py{
+	padding: 2% 0%;
+}
+
+.pyy{
+	padding: 5% 0%;
+}
+
+.pBot{
+	padding-bottom: 5%;
+}
+
+.active{
+	color: #5e1b22;
+}
+
+/* Link Colour*/
+a{
+	color: #c12530;
+}
+
+a:hover{
+	color: #fe3a4b;
+}
+
+a:focus{
+	color: #c12530;
+}
+
+label, .centered-text{
+	text-align: center;
+}
+
+
+/* Blog */
+
+.container {
+	background-color:rgba(255,255,255,0.7);
+
+}
+
+#blogPost{
+	padding: 2%;
+	border-bottom: 2px solid #333333;
+}
+
+#blogPost:last-child{
+	border-bottom: none;
+}
+
+#date h4 small{
+	color: #666666;
+}
+
+#date h4{
+	line-height: 0.5em;
+}
+
+.small h4{
+	font-weight: 900;
+	font-size: 0.8em;
+}
+
+.color{	
+	color: #c12530;
+}
+
+#dateComment{
+	color: #666666;
+	text-align: right;
+}
+
+#userIcon{
+	text-align: center;
+}
+
+textarea {
+	font-family: Roboto, FontAwesome;
+	margin-bottom: 0%;
+}
+
+#send {
+	margin-bottom: 0%;
+}
+
+.quote {
+	border-left: 4px solid #4c4c4c;
+}
+
+/* FU FOUNDATION - Style Resets */
+.accordion-title, .accordion-item, .accordion-content, .accordion{
+	padding: 0%;
+	border: none;
+	background-color: transparent;
+}
+.accordion-title:hover{
+	background-color: transparent;
+}
+.accordion-title::before{
+	display: none;
+}
+:last-child:not(.is-active) > .accordion-title, :last-child > .accordion-content:last-child {
+	border-bottom: none;
+}
+/*Btn Colour*/
+.button{
+	color: #c12530;
+	background-color: transparent;
+}
+.button:hover{
+	color: #fe3a4b;
+	background-color: transparent;
+}
+.button:focus{
+	color: #fe3a4b;
+	background-color: transparent;
+}
+.button:disabled{
+	color: #333333;
+	background-color: transparent;
+}
+.button:disabled:hover{
+	color: #333333;
+	background-color: transparent;
+}
+.accordion-title button::before{
+	content: 'Show ';
+}
+.is-active > .accordion-title button::before {
+	content: 'Hide ';
+}
+
+#History{ text-align: justify; }
+#History a::after {	content: ' \2022 '; }
+#History a:last-child::after {content: none;}
+
+
+/*for Large screens*/ 
+@media (min-width: 1024px){
+
+#Logo, #firstCol{
+	padding: 0;
+	background-color: #eaeaea;
+}
+
+p{
+	text-align: justify;
+}
+
+}
+
+/*for Medium screens*/ 
+@media (min-width: 640px) and (max-width: 1023px){
+
+header img{
+	max-width: 50%;
+}
+
+}
+
+/*for Small screens*/ 
+@media (max-width: 639px){
+
+
+}
+
+/*for Medium screens & Lower*/ 
+@media (max-width: 1023px){
+
+header img{
+	max-width: 50%;
+}
+#date h4 small{
+	text-align: right;
+}
+
+#medNavBar{
+	background-color: #eaeaea;
+	margin: 2% 0%;
+}
+nav{
+	padding: 3% 0%;
+}
+ul, li{
+	text-align: center;
+}
+.accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
+	border: none;
+}
+
+p{
+	text-align: left;
+}
+
+}
