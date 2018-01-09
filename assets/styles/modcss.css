@@ -1,0 +1,66 @@
+body
+{
+	font-family: Roboto, FontAwesome;
+	color: #333333;
+	margin: 0%;
+	background: url("../imgs/MoD/bk_top.png") no-repeat left top fixed, url("../imgs/MoD/bk_bot.png") no-repeat left bottom fixed;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.itemsCenter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.trueCenter {
+	display: flex;
+	flex: 0;
+	justify-content: center;
+	align-items: center;
+}
+
+#mainTitle{padding-bottom: 0%;}
+
+#socialNetworks a{color: #495591;}
+#socialNetworks a:hover{color: #f8bbd0;}
+
+
+#blogPost, #postComment{padding: 2%;}
+#blogPost{color: #495591;}
+#postComment,header,nav{background-color: #495591;color: #f8bbd0;}
+
+#paragraph{margin-top: 0%; text-align: justify;}
+
+#formIcon{font-size: 1.5em;}
+
+
+.input-field label, .input-field i {color: #f8bbd0;}
+.input-field input[type=text]:focus + label {color: #f8bbd0;}
+.input-field input[type=text]:focus {
+	border-bottom: 1px solid #f8bbd0;
+	box-shadow: 0 1px 0 0 #f8bbd0;
+}
+
+.input-field input[type=text].valid {
+	border-bottom: 1px solid #f8bbd0;
+	box-shadow: 0 1px 0 0 #f8bbd0;
+}
+input[type="text"]:not(.browser-default), input[type="password"]:not(.browser-default), input[type="email"]:not(.browser-default), input[type="url"]:not(.browser-default), input[type="time"]:not(.browser-default), input[type="date"]:not(.browser-default), input[type="datetime"]:not(.browser-default), input[type="datetime-local"]:not(.browser-default), input[type="tel"]:not(.browser-default), input[type="number"]:not(.browser-default), input[type="search"]:not(.browser-default), textarea.materialize-textarea {
+	border-bottom: 1px solid #f8bbd0;
+	box-shadow: 0 1px 0 0 #f8bbd0;
+}
+.input-field input[type=text].invalid {
+	border-bottom: 1px solid #f50057;
+	box-shadow: 0 1px 0 0 #f50057;
+}
+
+input, textarea{color: #cfd8dc; font-weight: 900;}
+
+#userProfile{background-color:rgba(255,255,255,0.7);}
+#userInfo{text-align: center;}
+#userProfile h5{margin-top: 0%;}
+#userProfile p{text-align: justify;}
+#userProfile small {border-bottom: 1px solid #303030; padding-bottom: 5%;}

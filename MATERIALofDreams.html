@@ -9,16 +9,17 @@
 	<meta name="description" content="Evaluacion final de NextU - Framework y Librerías CSS">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<!--Icons-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Materialize-->
-    <link href="Materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="Materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+	<!-- Custom CSS -->	
+	<link href="assets/styles/modcss.css" rel="stylesheet" type="text/css">
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Favicon -->
-	<link rel="icon" href="assets/Logos_and_Favicons/logo-01.png" type="image/png" sizes="16x16">
-
-	<!-- Typogaphy -->
-	<link href='https://fonts.googleapis.com/css?family=Roboto' type="text/css" rel='stylesheet'>
+	<link rel="icon" href="assets/Logos_and_Favicons/Logos_favMoD.png" type="image/png" sizes="16x16">
 
 	<title>Material of Dreams</title>
 </head>
@@ -26,28 +27,138 @@
 <!-- Body -->
 <body>
 
-	<!-- Header -->
-	<header>
-	<!-- Nav Bar -->
-	<nav>
-	</nav>
-	</header>
+<!-- Header -->
+<header class="row">
+		<img src="assets/Logos_and_Favicons/Logos_LogoMoD.png" class="responsive-img col l3 m5 s6">
 
+<!-- Nav Bar -->
+<nav class="nav-extended">
+	<div id="navMenu" class="col m7 l9 s12">
+		<ul id="menu" class="right hide-on-small-only">
+			<li><a class="waves-effect waves-light btn pink lighten-2" href="BOOTSTRAPPINGtoMusic.html">Music Blog</a></li>
+			<li><a class="waves-effect waves-light btn pink lighten-2" href="TheFOUNDATIONofGastronomy.html">Cooking Blog</a></li>
+			<li><a class="waves-effect waves-light btn pink lighten-2 active" href="MATERIALofDreams.html">Turism Blog</a></li>
+		</ul>
 
-	<!-- Content -->
-	<div id="content">
-	
+		<ul id="menu" class="hide-on-med-and-up itemsCenter">
+			<li><a class="waves-effect waves-light btn pink lighten-2 col s12" href="BOOTSTRAPPINGtoMusic.html"><i class="fa fa-music fa-fw"></i></a></li>
+			<li><a class="waves-effect waves-light btn pink lighten-2 col s12" href="TheFOUNDATIONofGastronomy.html"><i class="fa fa-star fa-fw"></i></a></li>
+			<li><a class="waves-effect waves-light btn pink lighten-2 col s12 active" href="MATERIALofDreams.html"><i class="fa fa-plane fa-fw"></i></a></li>
+		</ul>
 	</div>
 
+	<div class="nav-content">
+		<h3 id="mainTitle" class="nav-title col s12 m7 l8">Traveling through tokio</h3>
+	</div>
+</nav>
 
-	<!-- Footer -->
-	<footer>
-		
-	</footer>
+</header>
 
-	<!-- Materialize -->	
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="Materialize/js/materialize.min.js"></script>
+
+<!-- Content -->
+<div id="content container">
+
+<div class="row">
+	<div id="socialNetworks" class="col s1 hide-on-med-and-down">
+		<a href="http://www.instagram.com/rics.designs"><span class="fa fa-instagram fa-5x"></span></a>
+		<a href="#"><span class="fa fa-twitter-square fa-5x"></span></a>
+		<a href="#"><span class="fa fa-facebook-square fa-5x"></span></a>	
+	</div>
+
+	<div id="photoCollage">
+		<div class="col s12 m3">
+			<img class="responsive-img" src="assets/imgs/MoD/japan01.jpg">
+			<img class="responsive-img" src="assets/imgs/MoD/japan02.jpg">
+			<img class="responsive-img" src="assets/imgs/MoD/japan03.jpg">
+		</div>
+
+		<div class="col s12 m5">
+			<div id="mainImage">
+				<img class="responsive-img" src="assets/imgs/MoD/japan06.jpg">
+			</div>
+		</div>
+
+		<div class="col s12 m3">
+			<img class="responsive-img" src="assets/imgs/MoD/japan05.jpg">
+			<img class="responsive-img" src="assets/imgs/MoD/japan04.jpg">
+			<img class="responsive-img" src="assets/imgs/MoD/japan07.jpg">
+		</div>
+	</div>
+</div><!-- End of the first half-->
+
+<div class="row">
+	<div id="blogEntries" class="col s12 l9">
+		<div id="blogPost" class="row pink lighten-4">			
+			<div id="blogTitle" class="col s12">
+				<h4>Small alleway, big hearts</h4>
+				<small><h5 class="blue-grey-text">
+					<div class="chip"><i class="fa fa-calendar fa-fw"></i> 2018/01/08</div>
+					<div class="chip"><a href="https://www.google.com/maps/place/Tokyo,+Japan/@35.6694219,139.4611832,10z" target="_blank"><i class="fa fa-map-marker fa-fw"></i> Tokio, Japan</a></div></h5></small>
+			</div>
+
+			<div class="col s12">
+				<img class="responsive-img col s12 m4" src="assets/imgs/MoD/japan06.jpg">
+				<p id="paragraph" class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et ornare elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</br>
+				</br>In vehicula arcu et elementum auctor. Suspendisse potenti. Integer non tincidunt ligula. Maecenas quis ligula sapien. Cras vehicula, ex ac posuere sollicitudin, nisl justo luctus est, gravida ultricies turpis ex eget urna. In posuere magna ac erat euismod elementum. Aliquam ut gravida dui. Suspendisse finibus quam orci, ac posuere sem venenatis dictum.</p>
+			</div>
+		</div> <!-- blogPost ends-->
+
+		<div id="postComment" class="row">
+			<form class="col s12">
+
+				<div class="col s12 m6 input-field">
+					<i id="formIcon" class="fa fa-user-circle fa-fw prefix"></i>
+					<input type="text" name="userName" class="validate" required>
+					<label for="userName">Name</label>
+				</div>
+	
+				<div class="col s12 m6 input-field">
+					<i id="formIcon" class="fa fa-envelope fa-fw prefix"></i>
+					<input type="text" name="eMail" class="validate" required>
+					<label for="eMail">Email</label>
+				</div>
+	
+				<div class="col s12 input-field">
+					<textarea class="materialize-textarea text-white" id="commentArea" rows="3" required></textarea>
+					<label for="commentArea">&#xF075 Write what you think</label>
+				</div>
+	
+				<div class="col s12 trueCenter">
+					<button id="send" class="btn waves-effect waves-light btn pink lighten-2" type="submit">Post <span class="fa fa-paper-plane fa-fw"></span></button>
+				</div>
+
+			</form>
+		</div><!-- Post Comment Ends-->
+
+	</div> <!-- blogEntries ends-->
+
+	<div id="userProfile" class="col m12 l3">
+		<div id="userInfo">
+			<span class="fa-5x fa-user-circle"></span>
+			<h5 class="col s12">Rics</h5>
+			<small class="col s12">@rics.designs</small>
+		</div>
+		<p class="col s12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+</div><!-- End of the second half -->
+
+</div><!--End of content-->
+
+
+<!-- Footer -->
+<footer>
+	
+</footer>
+
+<!-- Materialize -->	
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="Materialize/js/materialize.min.js"></script>
 
 </body>
 </html>
